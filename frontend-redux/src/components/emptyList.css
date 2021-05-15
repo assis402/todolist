@@ -1,0 +1,14 @@
+.emptyList {
+    height: 75px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 21px;
+    color: #c9c9c978;
+    font-weight: 600;
+    background-color: #00000014;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
