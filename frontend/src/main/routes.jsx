@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Todo from "./todo/todo"
-import Home from "./todo/home"
+import Todo from "../todo/todo"
+import Home from "../home/home"
 
 const Routes = () => {
     return (

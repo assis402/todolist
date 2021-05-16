@@ -1,14 +1,18 @@
 import axios from 'axios'
 import React, { Component } from 'react'
 import Input from '../components/input'
+import { Link } from 'react-router-dom';
 import TodoList from './todoList'
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './todo.css'
 
 const URL = 'http://localhost:3003/api/todo'
 
 export default class Todo extends Component {
   constructor(props){
     super(props)
-    this.state = { description: '', list: [], ip: null, noResult: false}
+    this.state = { description: '', list: [0,], ip: null, noResult: false}
 
     this.handleChange = this.handleChange.bind(this)
     this.handleRemove = this.handleRemove.bind(this)
@@ -48,13 +52,6 @@ export default class Todo extends Component {
 
   handleSearch() {
     this.refresh(this.state.description)
-
-    if (this.state.list.length === 0){
-      this.setState({...this.state, noResult: true})
-    }
-    else {
-      this.setState({...this.state, noResult: false})
-    }
   }
 
   handleAdd() {
@@ -71,8 +68,8 @@ export default class Todo extends Component {
   }
 
   handleChangeDeadLine(id, date) {
-    axios.put(`${URL}/${this.state.ip}}`, { deadLine: date })
-      .then(resp => this.refresh())
+    axios.put(`${URL}/${id}`, { deadLine: date })
+      .then(resp => this.refresh(this.state.description))
 
   }
 
@@ -88,6 +85,7 @@ export default class Todo extends Component {
 
   render() {
     return (
+      <>
       <div className="container">
         <Input 
           description={this.state.description} 
@@ -101,6 +99,12 @@ export default class Todo extends Component {
           handleMarkAsDone={this.handleMarkAsDone}
           handleChangeDeadLine={this.handleChangeDeadLine}/>
       </div>
+      <Link to="/">
+        <button className="return">
+          <FontAwesomeIcon className="returnIcon" icon={faArrowLeft} size="lg" />
+        </button>
+      </Link>
+      </>
     )
   }
 } 

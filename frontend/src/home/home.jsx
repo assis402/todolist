@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './home.css'
-import linkedin from '../imgs/linkedin2.svg'
+import linkedin from '../imgs/linkedin.svg'
 import github from '../imgs/github.svg'
 import gmail from '../imgs/gmail.svg'
 import { Link } from 'react-router-dom';
@@ -29,9 +29,9 @@ export default class Todo extends Component {
 
                     <div className="developed">developed by <span className="assis">Matheus de Assis</span></div>
                     <div className="contacts">
-                        <img src={linkedin} alt="" className="linkedin"/>
-                        <img src={github} alt="" className="github"/>
-                        <img src={gmail} alt="" className="gmail"/>
+                        <a href="https://www.linkedin.com/in/assisdematheus/"><img src={linkedin} alt="" className="linkedin"/></a>
+                        <a href="https://github.com/assis402"><img src={github} alt="assis402" className="github"/></a>
+                        <a href="mailto: assis4002@gmail.com"><img src={gmail} alt="assis4002@gmail.com" className="gmail"/></a>
                     </div>
                 </div>
             </div>

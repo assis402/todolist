@@ -6,7 +6,7 @@ const todoSchema = new mongoose.Schema({
     description: { type: String, required: true },
     done: { type: Boolean, default: false},
     deadLine: { type: Date, default: Date.now },
-    ip: { type: String, required: true},
+    ip: { type: String, required: false},
     createdAt: { type: Date, default: Date.now }
 })
 

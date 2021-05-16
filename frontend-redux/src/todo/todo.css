@@ -1,0 +1,29 @@
+.return {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
+    margin-top: -68px;
+    margin-left: -25px;
+    border: none;
+    background-color: rgb(200 176 212 / 39%);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 11px rgb(158 142 167 / 11%);
+    -webkit-box-shadow: 0px 0px 2px 11px rgb(158 142 167 / 11%);
+    -moz-box-shadow: 0px 0px 2px 11px rgb(158 142 167 / 11%);
+    cursor: pointer;
+}
+
+.return:hover {
+    background-color: rgb(200 176 212 / 52%);
+}
+
+.return:active {
+    background-color: rgb(200 176 212 / 52%);
+}
+
+.returnIcon {
+    font-size: 25px;
+    color: rgb(6 3 5 / 62%);
+}

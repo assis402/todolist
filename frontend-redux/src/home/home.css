@@ -77,9 +77,10 @@
     margin-top: 15px;
 }
 
-img {
+.contacts img {
     height: 40px;
     cursor: pointer;
+
 }
 
 .linkedin {

@@ -1,0 +1,9 @@
+.loadingGif {
+    opacity: 0.5;
+    width: 50px;
+    background-color: rgb(147 122 160 / 18%);
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: -20px;
+    margin-top: 10px;
+}
