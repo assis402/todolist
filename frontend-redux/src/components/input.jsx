@@ -18,16 +18,16 @@ class Input extends Component {
 
   keyHandler(e) {
     const { add, search, description, list } = this.props
-    if (e.key === 'Enter' && list.length !== 6) {
+    if (e.key === 'Enter' && list.length !== 20) {
       e.shiftKey ? search(true) : add(description)
     }
   } 
 
   render() {
     const { add, search, description, changeDescription, list } = this.props
-    const placeHolder = list.length === 6 ? 'Limite de tarefas atingido' : 'Adicione ou pesquise'
-    const limit = list.length === 6 ? true : false
-    const inputStyle = list.length === 6 ? 'limit' : ''
+    const placeHolder = list.length === 20 ? 'Limite de tarefas atingido' : 'Adicione ou pesquise'
+    const limit = list.length === 20 ? true : false
+    const inputStyle = list.length === 20 ? 'limit' : ''
 
     return (
       <div className="inputBackground">

@@ -23,11 +23,11 @@ export default class Todo extends Component {
                     <div className="triangle"></div>
                     <Link to="/app">
                         <button className="enter">
-                            Enter To App
+                            Entre no App
                         </button>
                     </Link>
 
-                    <div className="developed">developed by <span className="assis">Matheus de Assis</span></div>
+                    <div className="developed">desenvolvido por <span className="assis">Matheus de Assis</span></div>
                     <div className="contacts">
                         <a href="https://www.linkedin.com/in/assisdematheus/"><img src={linkedin} alt="" className="linkedin"/></a>
                         <a href="https://github.com/assis402"><img src={github} alt="assis402" className="github"/></a>
