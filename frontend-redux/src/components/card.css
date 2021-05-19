@@ -43,7 +43,8 @@
 .dateIcon {
   margin-right: 5px;
   color: rgb(152 223 219 / 70%);
-  font-size: 0.95em;
+  font-size: 0.8em;
+  margin-bottom: -1px;
 }
 
 .dateIconDone {
@@ -183,6 +184,10 @@
   border-color: #272727;
 }
 
-.react-datepicker__triangle {
+.react-datepicker-popper .react-datepicker__triangle {
   border-bottom-color: #73a6a4 !important;
+}
+
+.react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle {
+  border-top-color: #0d0f12 !important;
 }
